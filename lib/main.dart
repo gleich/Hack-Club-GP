@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import 'package:hack_club_gp/routes/home/home.dart';
-import 'package:hack_club_gp/themes.dart';
+import 'package:hack_club/routes/home/home.dart';
+import 'package:hack_club/themes.dart';
 
 void main() => runApp(_HackClubGP());
 
