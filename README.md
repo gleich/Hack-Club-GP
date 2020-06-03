@@ -1,13 +1,14 @@
-# Hack Club Mobile
+# Hack Club GP
 
 ![Format](https://github.com/Matt-Gleich/Mobile/workflows/Format/badge.svg) ![Flutter Build](https://github.com/Matt-Gleich/Mobile/workflows/Flutter%20Build/badge.svg)
 
-Hack Club mobile app for ios and android.
+A mobile app for IOS and Android that allows you to trade GP with other users or for cool stuff.
 
 ## ✨ Features
 
-- 🔔 Get notifications on up coming hackathons and AMAs
-- 💸 Trade and by things with GP
+- Give people GP in person with specialized QR codes
+- Get stats about the GP economy
+- Buy stuff with your GP
 
 ## 👩👱 Contributing
 

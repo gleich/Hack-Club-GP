@@ -65,7 +65,7 @@ class Greeting extends StatelessWidget {
               ),
             ),
             Text(
-              timeOfDay,
+              '$timeOfDay!',
               style: TextStyle(
                 fontSize: _fontSize,
                 decoration: TextDecoration.underline,
