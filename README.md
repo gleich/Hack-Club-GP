@@ -1,5 +1,7 @@
 # Hack Club Mobile
 
+![Format](https://github.com/Matt-Gleich/Mobile/workflows/Format/badge.svg) ![Flutter Build](https://github.com/Matt-Gleich/Mobile/workflows/Flutter%20Build/badge.svg)
+
 Hack Club mobile app for ios and android.
 
 ## ✨ Features
