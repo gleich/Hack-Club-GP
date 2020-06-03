@@ -1,0 +1,15 @@
+name: Flutter Build
+on: [push, pull_request, release]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - uses: subosito/flutter-action@v1.3.2
+        with:
+          channel: 'beta'
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web
