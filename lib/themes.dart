@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 class Themes {
   // Shared Values
   static const _primaryColor = Color.fromRGBO(236, 55, 80, 1);
+  final _textTheme = TextTheme(
+    button: TextStyle(
+      fontSize: 25,
+      color: Colors.white,
+    ),
+  );
 
   ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
@@ -12,6 +18,7 @@ class Themes {
         ),
         scaffoldBackgroundColor: Color.fromRGBO(23, 23, 29, 1),
         primaryColor: _primaryColor,
+        textTheme: _textTheme,
       );
 
   ThemeData get lightTheme => ThemeData(
@@ -21,5 +28,6 @@ class Themes {
         ),
         scaffoldBackgroundColor: Colors.white,
         primaryColor: _primaryColor,
+        textTheme: _textTheme,
       );
 }
