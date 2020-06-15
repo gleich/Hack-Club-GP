@@ -17,7 +17,7 @@ class _HackClubGP extends StatelessWidget {
       home: HomeRoute(),
       theme: themes.lightTheme,
       darkTheme: themes.darkTheme,
-      themeMode: ThemeMode.light,
+      // themeMode: ThemeMode.light,
     );
   }
 }

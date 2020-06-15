@@ -17,7 +17,7 @@ class HomeRoute extends StatelessWidget {
           children: <Widget>[
             Greeting(),
             const SizedBox(
-              height: 20,
+              height: 40,
             ),
             PageButtons(),
           ],
