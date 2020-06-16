@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.3
   flutter_staggered_animations: ^0.1.2
+  material_design_icons_flutter: '^3.4.4895'
 
 dev_dependencies:
   flutter_test:
@@ -19,6 +20,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis/Regular.ttf
 
 import_sorter:
   emojis: true

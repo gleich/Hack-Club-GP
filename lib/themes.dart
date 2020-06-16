@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class Themes {
   // Shared Values
   static const _primaryColor = Color.fromRGBO(236, 55, 80, 1);
+  static const _fontFamily = "Metropolis";
   TextTheme _textTheme(brightness) => TextTheme(
         button: TextStyle(
           fontSize: 25,
@@ -19,6 +20,10 @@ class Themes {
         scaffoldBackgroundColor: Color.fromRGBO(23, 23, 29, 1),
         primaryColor: _primaryColor,
         textTheme: _textTheme(Brightness.dark),
+        fontFamily: _fontFamily,
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: _primaryColor,
+        ),
       );
 
   ThemeData get lightTheme => ThemeData(
@@ -29,5 +34,6 @@ class Themes {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: _primaryColor,
         textTheme: _textTheme(Brightness.light),
+        fontFamily: _fontFamily,
       );
 }

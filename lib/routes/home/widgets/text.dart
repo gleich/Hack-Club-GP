@@ -54,7 +54,7 @@ class Greeting extends StatelessWidget {
                 decoration: TextDecoration.underline,
                 decorationColor: Theme.of(context).primaryColor,
                 decorationStyle: TextDecorationStyle.wavy,
-                decorationThickness: 1,
+                decorationThickness: 3,
               ),
             ),
           ],

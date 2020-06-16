@@ -6,6 +6,8 @@ import 'package:hack_club_gp/routes/home/widgets/buttons.dart';
 import 'package:hack_club_gp/routes/home/widgets/text.dart';
 
 class HomeRoute extends StatelessWidget {
+  static const name = '/home';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
