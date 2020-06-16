@@ -1,4 +1,6 @@
 // 🐦 Flutter imports:
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class HackClubButton extends StatelessWidget {
@@ -18,11 +20,13 @@ class HackClubButton extends StatelessWidget {
       padding: padding ?? EdgeInsets.all(0),
       child: RaisedButton(
         onPressed: onPressed,
-        color: Colors.transparent,
+        color: Theme.of(context).scaffoldBackgroundColor,
         padding: const EdgeInsets.symmetric(
           vertical: 10,
           horizontal: 10,
         ),
+        splashColor: Theme.of(context).primaryColor,
+        highlightColor: Colors.transparent,
         child: child,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
