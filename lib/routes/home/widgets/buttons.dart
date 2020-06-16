@@ -16,7 +16,7 @@ class PageButtons extends StatelessWidget {
         children: AnimationConfiguration.toStaggeredList(
           duration: const Duration(seconds: 1),
           childAnimationBuilder: (widget) => SlideAnimation(
-            horizontalOffset: 70,
+            horizontalOffset: 100,
             child: FadeInAnimation(
               child: widget,
             ),
