@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
 
 // 📦 Package imports:
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -17,8 +18,27 @@ class PageTemplate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bottomNavBarItems = <String>[
+      QRTradeRoute.name,
+    ];
+    int index;
+
     return Scaffold(
+      appBar: AppBar(
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              icon,
+              color: Theme.of(context).primaryColor,
+            ),
+            const SizedBox(width: 20),
+            Text(name),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Theme.of(context).primaryColor,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(MdiIcons.qrcode),
@@ -35,6 +55,10 @@ class PageTemplate extends StatelessWidget {
             title: Text('Balance'),
           ),
         ],
+        onTap: (int index) => Navigator.popAndPushNamed(
+          context,
+          bottomNavBarItems[index],
+        ),
       ),
     );
   }
