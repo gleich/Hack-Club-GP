@@ -15,8 +15,8 @@ class HomeRoute extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Greeting(),
-            const SizedBox(
-              height: 40,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.1,
             ),
             PageButtons(),
           ],

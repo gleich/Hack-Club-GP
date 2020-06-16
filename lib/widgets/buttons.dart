@@ -14,25 +14,21 @@ class HackClubButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Padding(
-        padding: padding ?? EdgeInsets.all(0),
-        child: Container(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: child,
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
-            gradient: LinearGradient(
-              begin: Alignment(-1.0, -2.0),
-              end: Alignment(1.0, 2.0),
-              colors: <Color>[
-                Color.fromRGBO(242, 98, 18, 1),
-                Color.fromRGBO(242, 37, 138, 1)
-              ],
-            ),
+    return Padding(
+      padding: padding ?? EdgeInsets.all(0),
+      child: RaisedButton(
+        onPressed: onPressed,
+        color: Colors.transparent,
+        padding: const EdgeInsets.symmetric(
+          vertical: 10,
+          horizontal: 10,
+        ),
+        child: child,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+          side: BorderSide(
+            color: Theme.of(context).primaryColor,
+            width: 3,
           ),
         ),
       ),
