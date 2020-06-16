@@ -1,4 +1,7 @@
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class PageTemplate extends StatelessWidget {

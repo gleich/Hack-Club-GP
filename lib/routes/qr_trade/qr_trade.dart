@@ -1,6 +1,11 @@
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:hack_club_gp/widgets/templates.dart';
+
+// 📦 Package imports:
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+// 🌎 Project imports:
+import 'package:hack_club_gp/widgets/templates.dart';
 
 class QRTradeRoute extends StatelessWidget {
   static const name = '/trade/qr';

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
 
 // 🌎 Project imports:
+import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
 import 'package:hack_club_gp/widgets/buttons.dart';
 
 class PageButtons extends StatelessWidget {
