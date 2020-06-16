@@ -1,9 +1,11 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
 
 // 📦 Package imports:
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+// 🌎 Project imports:
+import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
 
 class PageTemplate extends StatelessWidget {
   final String name;
@@ -21,7 +23,6 @@ class PageTemplate extends StatelessWidget {
     final bottomNavBarItems = <String>[
       QRTradeRoute.name,
     ];
-    int index;
 
     return Scaffold(
       appBar: AppBar(
