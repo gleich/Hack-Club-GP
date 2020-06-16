@@ -21,9 +21,6 @@ class Themes {
         primaryColor: _primaryColor,
         textTheme: _textTheme(Brightness.dark),
         fontFamily: _fontFamily,
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: _primaryColor,
-        ),
       );
 
   ThemeData get lightTheme => ThemeData(

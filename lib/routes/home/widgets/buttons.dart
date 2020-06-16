@@ -37,7 +37,7 @@ class PageButtons extends StatelessWidget {
                 style: Theme.of(context).textTheme.button,
               ),
               onPressed: () => print("NFC Trade"),
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 20),
             ),
             HackClubButton(
               child: Text(
