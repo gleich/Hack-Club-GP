@@ -15,7 +15,7 @@ class QRTradeRoute extends StatelessWidget {
     return PageTemplate(
       name: "QR Code Trading",
       icon: MdiIcons.qrcode,
-      body: Text('Ahhh'),
+      body: Container(),
     );
   }
 }

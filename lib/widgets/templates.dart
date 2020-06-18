@@ -32,10 +32,19 @@ class PageTemplate extends StatelessWidget {
               color: Theme.of(context).primaryColor,
             ),
             const SizedBox(width: 20),
-            Text(name),
+            Text(
+              name,
+              style: TextStyle(
+                color:
+                    MediaQuery.of(context).platformBrightness == Brightness.dark
+                        ? Colors.black
+                        : Colors.white,
+              ),
+            ),
           ],
         ),
       ),
+      body: body,
       bottomNavigationBar: NavBar(),
     );
   }
