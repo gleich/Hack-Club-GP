@@ -1,8 +1,8 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 
 // 📦 Package imports:
+import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // 🌎 Project imports:
