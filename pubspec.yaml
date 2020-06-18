@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   flutter_staggered_animations: ^0.1.2
   material_design_icons_flutter: '^3.4.4895'
+  flutter_snake_navigationbar: ^0.4.0+1
 
 dev_dependencies:
   flutter_test:
