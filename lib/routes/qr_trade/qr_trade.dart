@@ -12,7 +12,7 @@ class QRTradeRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageTemplate(
+    return SelectorTemplate(
       name: "QR Code Trading",
       icon: MdiIcons.qrcode,
       body: Container(),
