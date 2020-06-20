@@ -10,7 +10,7 @@ import 'package:hack_club_gp/models/pageOutline.dart';
 class NFCTradePage {
   PageOutline get outline => PageOutline(
         pageName: 'NFC Trading',
-        icon: MdiIcons.nfcSearchVariant,
+        icon: MdiIcons.nfcTap,
         body: Container(),
       );
 }
