@@ -7,10 +7,10 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 // 🌎 Project imports:
 import 'package:hack_club_gp/models/pageOutline.dart';
 
-class QRTradePage {
+class NFCTradePage {
   PageOutline get outline => PageOutline(
-        pageName: 'QR Code Trading',
-        icon: MdiIcons.qrcode,
+        pageName: 'NFC Trading',
+        icon: MdiIcons.nfcSearchVariant,
         body: Container(),
       );
 }

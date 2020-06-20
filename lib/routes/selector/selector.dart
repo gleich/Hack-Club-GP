@@ -4,10 +4,13 @@ import 'package:flutter/services.dart';
 
 // 📦 Package imports:
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
+import 'package:hack_club_gp/routes/selector/pages/balance.dart';
+import 'package:hack_club_gp/routes/selector/pages/nfc_trade.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // 🌎 Project imports:
 import 'package:hack_club_gp/routes/selector/pages/qr_trade.dart';
+import 'package:hack_club_gp/models/pageOutline.dart';
 
 class SelectorRoute extends StatefulWidget {
   final int initialIndex;
@@ -21,7 +24,11 @@ class SelectorRoute extends StatefulWidget {
 class _SelectorRoute extends State<SelectorRoute> {
   var _currentIndex = 0;
   var _setInitial = false;
-  var _pageOutlines = [QRTradePage().outline];
+  var _pageOutlines = <PageOutline>[
+    QRTradePage().outline,
+    NFCTradePage().outline,
+    BalanceTradePage().outline,
+  ];
 
   @override
   Widget build(BuildContext context) {

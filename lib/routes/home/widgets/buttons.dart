@@ -40,12 +40,12 @@ class PageButtons extends StatelessWidget {
                 "🤝 NFC Trade",
                 style: Theme.of(context).textTheme.button,
               ),
-              onPressed: () => () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => SelectorRoute(1),
-                    ),
-                  ),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SelectorRoute(1),
+                ),
+              ),
               padding: const EdgeInsets.symmetric(vertical: 20),
             ),
             HackClubButton(
@@ -53,12 +53,12 @@ class PageButtons extends StatelessWidget {
                 "💸 Balance",
                 style: Theme.of(context).textTheme.button,
               ),
-              onPressed: () => () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => SelectorRoute(2),
-                    ),
-                  ),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SelectorRoute(2),
+                ),
+              ),
             ),
           ],
         ),
