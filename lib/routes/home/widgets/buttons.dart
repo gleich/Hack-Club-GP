@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 // 🌎 Project imports:
-import 'package:hack_club_gp/routes/qr_trade/qr_trade.dart';
+import 'package:hack_club_gp/routes/selector/selector.dart';
 import 'package:hack_club_gp/widgets/buttons.dart';
 
 class PageButtons extends StatelessWidget {
@@ -28,15 +28,24 @@ class PageButtons extends StatelessWidget {
                 "📷 QR Trade",
                 style: Theme.of(context).textTheme.button,
               ),
-              onPressed: () =>
-                  Navigator.popAndPushNamed(context, QRTradeRoute.name),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SelectorRoute(0),
+                ),
+              ),
             ),
             HackClubButton(
               child: Text(
                 "🤝 NFC Trade",
                 style: Theme.of(context).textTheme.button,
               ),
-              onPressed: () => print("NFC Trade"),
+              onPressed: () => () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SelectorRoute(1),
+                    ),
+                  ),
               padding: const EdgeInsets.symmetric(vertical: 20),
             ),
             HackClubButton(
@@ -44,7 +53,12 @@ class PageButtons extends StatelessWidget {
                 "💸 Balance",
                 style: Theme.of(context).textTheme.button,
               ),
-              onPressed: () => print("Balance"),
+              onPressed: () => () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SelectorRoute(2),
+                    ),
+                  ),
             ),
           ],
         ),

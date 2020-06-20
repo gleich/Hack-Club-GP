@@ -1,32 +1,34 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 
 // 📦 Package imports:
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-class SelectorTemplate extends StatefulWidget {
-  final String name;
-  final IconData icon;
-  final Widget body;
+// 🌎 Project imports:
+import 'package:hack_club_gp/routes/selector/pages/qr_trade.dart';
 
-  SelectorTemplate({
-    @required this.name,
-    @required this.icon,
-    @required this.body,
-  });
+class SelectorRoute extends StatefulWidget {
+  final int initialIndex;
+
+  SelectorRoute(this.initialIndex);
 
   @override
-  _SelectorTemplate createState() => _SelectorTemplate();
+  _SelectorRoute createState() => _SelectorRoute();
 }
 
-class _SelectorTemplate extends State<SelectorTemplate> {
+class _SelectorRoute extends State<SelectorRoute> {
   var _currentIndex = 0;
+  var _setInitial = false;
+  var _pageOutlines = [QRTradePage().outline];
 
   @override
   Widget build(BuildContext context) {
+    if (!_setInitial) {
+      _currentIndex = widget.initialIndex;
+      _setInitial = true;
+    }
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -34,12 +36,12 @@ class _SelectorTemplate extends State<SelectorTemplate> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(
-              widget.icon,
+              _pageOutlines[_currentIndex].icon,
               color: Theme.of(context).primaryColor,
             ),
             const SizedBox(width: 20),
             Text(
-              widget.name,
+              _pageOutlines[_currentIndex].pageName,
               style: TextStyle(
                 color: Theme.of(context).brightness == Brightness.dark
                     ? Colors.white
@@ -49,7 +51,7 @@ class _SelectorTemplate extends State<SelectorTemplate> {
           ],
         ),
       ),
-      body: widget.body,
+      body: _pageOutlines[_currentIndex].body,
       bottomNavigationBar: SnakeNavigationBar(
         style: SnakeBarStyle.floating,
         snakeColor: Theme.of(context).primaryColor,
@@ -60,9 +62,7 @@ class _SelectorTemplate extends State<SelectorTemplate> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(MdiIcons.qrcode),
-            title: Text(
-              'QR Trade',
-            ),
+            title: Text('QR Trade'),
           ),
           BottomNavigationBarItem(
             icon: Icon(MdiIcons.nfcTap),
