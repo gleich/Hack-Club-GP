@@ -7,10 +7,10 @@ import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // 🌎 Project imports:
+import 'package:hack_club_gp/models/pageOutline.dart';
 import 'package:hack_club_gp/routes/selector/pages/balance.dart';
 import 'package:hack_club_gp/routes/selector/pages/nfc_trade.dart';
 import 'package:hack_club_gp/routes/selector/pages/qr_trade.dart';
-import 'package:hack_club_gp/models/pageOutline.dart';
 
 class SelectorRoute extends StatefulWidget {
   final int initialIndex;
