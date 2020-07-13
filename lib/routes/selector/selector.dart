@@ -69,7 +69,9 @@ class _SelectorRoute extends State<SelectorRoute> {
         items: _pageOutlines.map((outline) {
           return BottomNavigationBarItem(
             icon: Icon(outline.icon),
-            title: Text(outline.shortName != null ? outline.shortName : outline.pageName),
+            title: Text(outline.shortName != null
+                ? outline.shortName
+                : outline.pageName),
           );
         }).toList(),
         padding: EdgeInsets.all(20),

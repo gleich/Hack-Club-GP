@@ -11,6 +11,6 @@ class PageOutline {
     @required this.pageName,
     @required this.icon,
     @required this.body,
-    this.shortName
+    this.shortName,
   });
 }
