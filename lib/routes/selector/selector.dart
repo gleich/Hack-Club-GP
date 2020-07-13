@@ -66,24 +66,13 @@ class _SelectorRoute extends State<SelectorRoute> {
         selectedItemColor: Theme.of(context).scaffoldBackgroundColor,
         backgroundColor: Theme.of(context).appBarTheme.color,
         shadowColor: Colors.yellow,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(MdiIcons.qrcode),
-            title: Text('QR Trade'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(MdiIcons.nfcTap),
-            title: Text('NFC Trade'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(MdiIcons.scaleBalance),
-            title: Text('Balance'),
-          ),
-        ],
-        padding: EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 20,
-        ),
+        items: _pageOutlines.map((outline) {
+          return BottomNavigationBarItem(
+            icon: Icon(outline.icon),
+            title: Text(outline.shortName != null ? outline.shortName : outline.pageName),
+          );
+        }).toList(),
+        padding: EdgeInsets.all(20),
         showSelectedLabels: true,
         showUnselectedLabels: true,
         currentIndex: _currentIndex,
