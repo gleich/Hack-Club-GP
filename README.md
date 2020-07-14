@@ -1,6 +1,7 @@
 # Hack Club GP
 
-![Format](https://github.com/Matt-Gleich/Mobile/workflows/Format/badge.svg) ![Flutter Build](https://github.com/Matt-Gleich/Mobile/workflows/Flutter%20Build/badge.svg)
+![format](https://github.com/Matt-Gleich/Mobile/workflows/format/badge.svg)
+![build](https://github.com/Matt-Gleich/Mobile/workflows/build/badge.svg)
 
 A mobile app for IOS and Android that allows you to trade GP with other users or for cool stuff.
 
